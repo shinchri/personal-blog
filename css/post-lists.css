@@ -1,0 +1,17 @@
+.post-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "it"
+    "it";
+}
+
+.post-box {
+    width: 350px;
+    height: 200px;
+    border: 1px solid black;
+    
+    
+    margin-bottom: 50px;
+}

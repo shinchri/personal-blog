@@ -1,0 +1,60 @@
+/* Medium Screens */
+@media (min-width: 700px) and (max-width: 1100px) {
+    .container {
+        display: grid;
+        grid-template-columns: 200px 300px;
+        grid-template-rows: 150px auto 100px;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+    .categories {
+        display: block;
+    }
+    .category-list {
+        display: block;
+        margin-left: -20px;
+        border: none;
+        padding: 0px;
+    }
+
+    .post-box {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1101px) {
+    .container {
+        display: grid;
+        grid-template-columns: 200px 100px;
+        grid-template-rows: 150px auto 100px;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd sd main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+    .categories {
+        display: block;
+    }
+    .category-list {
+        display: block;
+        margin-left: -20px;
+        border: none;
+        padding: 0px;
+    }
+
+    .post-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "it it"
+        "it it";
+    }
+    .post-box {
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
