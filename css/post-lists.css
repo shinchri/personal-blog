@@ -30,6 +30,7 @@
 .post-title {
     grid-area: "tl";
     font-size: 25px;
+    color: blue;
 }
 
 .post-date {
