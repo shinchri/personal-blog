@@ -8,10 +8,39 @@
 }
 
 .post-box {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 40px 20px 100px 40px;
     width: 350px;
     height: 200px;
     border: 1px solid black;
+    grid-template-areas: 
+    "tl"
+    "dt"
+    "msg"
+    "lk";
     
-    
+    padding-left: 20px;
+    padding-bottom: 20px;
     margin-bottom: 50px;
+}
+
+.post-title {
+    grid-area: "tl";
+    font-size: 25px;
+}
+
+.post-date {
+    grid-area: "dt";
+    color: gray;
+    
+}
+
+.post-message {
+    grid-area: "msg";
+    margin-top: 20px;
+}
+
+.post-link {
+    grid-area: "lk";
 }
