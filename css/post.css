@@ -62,3 +62,17 @@ section p {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+blockquote {
+    content: "“" "”" "‘" "’";
+    background-color: lightgray;
+    padding: 15px;
+}
