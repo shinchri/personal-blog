@@ -10,14 +10,16 @@
 .post-box {
     display: grid;
     grid-template-columns: 350px;
-    grid-template-rows: 40px 20px 100px 40px;
+    grid-template-rows: 40px 20px 100px auto auto 40px;
     width: 350px;
-    height: 200px;
+    height: fit-content;
     border: 1px solid black;
     grid-template-areas: 
     "tl"
     "dt"
     "msg"
+    "img"
+    "txt"
     "lk";
     
     padding-left: 20px;
@@ -46,4 +48,14 @@
 
 .post-link {
     grid-area: "lk";
+}
+
+.center-img {
+    height: 100px;
+    width: 100px;
+    grid-area: "img"
+}
+
+.center-fig-img {
+    grid-area: "txt";
 }
